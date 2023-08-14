@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87" height="87" viewBox="0 0 87 87">
+  <defs>
+    <filter id="Ellipse_46" x="0" y="0" width="87" height="87" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="WhatsApp" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_46)">
+      <circle id="Ellipse_46-2" data-name="Ellipse 46" cx="34.5" cy="34.5" r="34.5" transform="translate(9 6)" fill="#5cdd5f"/>
+    </g>
+    <path id="Icon_awesome-whatsapp" data-name="Icon awesome-whatsapp" d="M28.478,7.117A16.6,16.6,0,0,0,2.355,27.147L0,35.745l8.8-2.31a16.547,16.547,0,0,0,7.933,2.019h.007a16.758,16.758,0,0,0,16.755-16.6A16.663,16.663,0,0,0,28.478,7.117ZM16.74,32.657a13.771,13.771,0,0,1-7.028-1.921l-.5-.3L3.992,31.8l1.391-5.092-.329-.523a13.822,13.822,0,1,1,25.637-7.334,13.95,13.95,0,0,1-13.951,13.8Zm7.566-10.333c-.411-.209-2.452-1.211-2.834-1.346s-.658-.209-.935.209-1.069,1.346-1.316,1.63-.486.314-.9.1c-2.437-1.219-4.037-2.176-5.645-4.935-.426-.733.426-.68,1.219-2.265A.769.769,0,0,0,13.862,15c-.1-.209-.935-2.25-1.278-3.08-.336-.807-.68-.7-.935-.71s-.516-.015-.793-.015a1.536,1.536,0,0,0-1.107.516A4.66,4.66,0,0,0,8.3,15.169a8.125,8.125,0,0,0,1.69,4.292c.209.277,2.923,4.464,7.088,6.265,2.632,1.136,3.664,1.234,4.979,1.039a4.248,4.248,0,0,0,2.8-1.974,3.469,3.469,0,0,0,.239-1.974C24.994,22.631,24.717,22.526,24.306,22.325Z" transform="translate(17.778 15.477)" fill="#fff"/>
+  </g>
+</svg>
