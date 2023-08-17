@@ -15,6 +15,10 @@ export const ContainerButtons = styled.div`
 
   p {
     margin-right: 64px;
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
 
     :last-child {
       margin-right: 0;
