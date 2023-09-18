@@ -14,6 +14,7 @@ interface CardProps {
   buttonText: string;
   children?: React.ReactNode;
   isLeft?: boolean;
+  colorButton?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -22,17 +23,18 @@ export const Card: React.FC<CardProps> = ({
   buttonText,
   children,
   isLeft = true,
+  colorButton,
 }) => {
   return (
-    <ContainerCard>
+    <ContainerCard isLeft={isLeft}>
       <ContainerInfo isLeft={isLeft}>
         <ContainerCenter isLeft={isLeft}>
           <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-          <Button text={buttonText} />
+          <Subtitle isLeft={isLeft}>{subtitle}</Subtitle>
+          <Button text={buttonText} color={colorButton} />
         </ContainerCenter>
-        <ContainerChildren isLeft={isLeft}>{children}</ContainerChildren>
       </ContainerInfo>
+      <ContainerChildren isLeft={isLeft}>{children}</ContainerChildren>
     </ContainerCard>
   );
 };

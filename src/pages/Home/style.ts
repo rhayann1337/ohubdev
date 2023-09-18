@@ -35,9 +35,19 @@ export const Description = styled.div`
   }
 `;
 
-export const ContainerCards = styled.div`
+export const ContainerSwiper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1320px;
-  margin-top: 50px;
+  margin-bottom: 178px;
+  min-width: 1320px;
 `;
+
+export const SwiperTitle = styled.h3`
+  font-size: 40px;
+  line-height: 53px;
+  font-family: Raleway;
+  font-weight: 600;
+`;
+
+export const SwiperSubtitle = styled.span``;
