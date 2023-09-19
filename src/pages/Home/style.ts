@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Swiper } from "swiper/react";
 
 export const Container = styled.div`
   width: 100%;
@@ -50,4 +51,45 @@ export const SwiperTitle = styled.h3`
   font-weight: 600;
 `;
 
-export const SwiperSubtitle = styled.span``;
+export const SwiperSubtitle = styled.span`
+  margin-bottom: 44px;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: Raleway;
+  font-weight: 400;
+`;
+
+export const CustomSwiper = styled(Swiper)`
+  width: 100%;
+`;
+
+export const ContainerDescription = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const DescriptionFirstText = styled.h3`
+  font-size: 40px;
+  font-family: Raleway;
+  font-weight: 400;
+  margin: 0;
+
+  span {
+    color: #ff5403;
+  }
+`;
+
+export const DescriptionSecondText = styled.h3`
+  font-size: 40px;
+  font-family: Raleway;
+  font-weight: 600;
+  margin-bottom: 112px;
+  margin-top: 0;
+`;
+
+export const ContainerAvatar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  max-width: 1320px;
+`;
