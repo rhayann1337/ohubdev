@@ -5,7 +5,7 @@ export const ContainerBox = styled.div`
   align-items: center;
   background-color: #000000;
   border-radius: 20px;
-  padding: 86px 0 86px 70px;
+  padding: 86px 0 86px 0;
   justify-content: space-between;
   min-width: 1320px;
   margin-bottom: 20px;
@@ -15,6 +15,7 @@ export const ContainerBox = styled.div`
 export const ContainerInfo = styled.div`
   display: flex;
   flex-direction: column;
+  margin-left: 70px;
 `;
 
 export const Title = styled.h3`
