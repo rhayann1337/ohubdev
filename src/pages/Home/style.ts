@@ -130,7 +130,6 @@ export const GridNews = styled.div`
 export const ContainerTalk = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
   background-color: #ff5403;
   border-radius: 20px;
   width: 100%;
@@ -166,9 +165,74 @@ export const TalkButton = styled.button`
 
 export const Footer = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
   background-image: url(${Cloud});
-  background-size: cover;
-  background-position: center;
-  height: 1511px;
+  background-size: 100% 1511px;
+  background-repeat: no-repeat;
+  background-position: initial;
+  max-height: 1511px;
   width: 100%;
+  flex-direction: column;
+  padding-bottom: 100px;
+  margin-top: 229px;
+`;
+
+export const FooterGrid = styled.div`
+  display: grid;
+  grid-template-columns: 75px 202px 80px 221px;
+  gap: 45px;
+  margin-top: 668px;
+`;
+
+type FooterColumnProps = {
+  color?: string;
+};
+
+export const FooterColumn = styled.div<FooterColumnProps>`
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+
+  a {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    color: ${({ color }) => (color ? color : "#313131")};
+  }
+`;
+
+export const FooterLastColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+
+  a {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Raleway;
+    font-weight: 400;
+    color: "#313131";
+  }
+`;
+
+export const FooterText = styled.div`
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 24px;
+  font-family: Raleway;
+  font-weight: 500;
+  color: "#313131";
+
+  p {
+    font-weight: 600;
+  }
 `;

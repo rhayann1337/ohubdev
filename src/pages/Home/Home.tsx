@@ -22,6 +22,11 @@ import {
   TalkTitle,
   ContainerTalk,
   Footer,
+  FooterGrid,
+  FooterFirstColumn,
+  FooterLastColumn,
+  FooterColumn,
+  FooterText,
 } from "./style";
 import lamp from "../../assets/lamp.svg";
 import ohubdevdesc from "../../assets/ohubdev-desc.svg";
@@ -166,7 +171,31 @@ export const Home: React.FC = () => {
             <p>Iniciar projeto</p>
           </TalkButton>
         </ContainerTalk>
-        <Footer></Footer>
+        <Footer>
+          <FooterGrid>
+            <FooterColumn>
+              <a>Início</a>
+              <a>Soluções</a>
+              <a>Parceiros</a>
+            </FooterColumn>
+            <FooterColumn color="#FF5403">
+              <a>(47) 99791-7737</a>
+              <a>contato@ohubdev.com.br</a>
+              <a>Santa Catarina — Brasil</a>
+            </FooterColumn>
+            <FooterColumn>
+              <a>Instragram</a>
+              <a>Linkedin</a>
+              <a>Facebook</a>
+            </FooterColumn>
+            <FooterLastColumn>
+              <a>Ohubdev® IT Services Ltda.</a>
+              <a>All Rights Reserverd — 2023</a>
+              <a>Made by Studio Typpe®.</a>
+            </FooterLastColumn>
+          </FooterGrid>
+          <FooterText>{/* o<p>hub</p>dev */}</FooterText>
+        </Footer>
       </ContainerBody>
     </Container>
   );
