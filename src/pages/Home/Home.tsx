@@ -23,63 +23,38 @@ import {
   ContainerTalk,
   Footer,
   FooterGrid,
-  FooterFirstColumn,
   FooterLastColumn,
   FooterColumn,
-  FooterText,
+  FooterIcon,
+  ContainerSubtitle,
 } from "./style";
-import lamp from "../../assets/lamp.svg";
-import ohubdevdesc from "../../assets/ohubdev-desc.svg";
-import microsoftLogo from "../../assets/microsoft-logo.svg";
-import { Button } from "../../components/Button/Button";
-import { Cards } from "../../components/Cards/Cards";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { SwiperSlide } from "swiper/react";
-import { CardTech } from "../../components/CardTech/CardTech";
-import { techList } from "../../utils/techInfos";
-import VetorImage from "../../assets/vetor_respiro.svg";
-import { Box } from "../../components/Box/Box";
-import { AvatarCard } from "../../components/AvatarCard/AvatarCard";
-import AvatarThiago from "../../assets/avatarIcon1.svg";
-import AvatarCris from "../../assets/avatarIcon2.svg";
 
-import ImperialPet from "../../assets/imperialpet_icon.svg";
-import Epay from "../../assets/epays_icon.svg";
-import GroupBc from "../../assets/grupobc_icon.svg";
-import MyClub from "../../assets/meuclub_icon.svg";
-import PP from "../../assets/portasp_icon.svg";
-import Invol from "../../assets/invol_icon.svg";
-import PenseViva from "../../assets/penseviva_icon.svg";
-import Employer from "../../assets/penseviva_icon.svg";
-import Type from "../../assets/typpe_icon.svg";
-import Hangar from "../../assets/hangar2_icon.svg";
-import Hills from "../../assets/hills2_icon.svg";
+import {
+  ArrowRight,
+  AvatarCris,
+  AvatarThiago,
+  VetorImage,
+  lamp,
+  microsoftLogo,
+  ohubFooter,
+  ohubdevGray,
+  ohubdevdesc,
+} from "../../assets";
 
-import News1 from "../../assets/news1.svg";
-import News2 from "../../assets/news2.svg";
-import News3 from "../../assets/news3.svg";
-import News4 from "../../assets/news4.svg";
-import News5 from "../../assets/news5.svg";
-import { Header } from "../../components/Header/Header";
-
-const partners = [
-  ImperialPet,
-  Epay,
-  GroupBc,
-  MyClub,
-  PP,
-  Invol,
-  PenseViva,
-  Employer,
-  Type,
-  Hangar,
-  Hills,
-];
-
-const news = [News1, News2, News3, News4, News5];
+import { news, partners, techList } from "../../utils";
+import {
+  Header,
+  Button,
+  Cards,
+  CardTech,
+  Box,
+  AvatarCard,
+} from "../../components";
 
 export const Home: React.FC = () => {
   return (
@@ -99,10 +74,14 @@ export const Home: React.FC = () => {
         <Cards />
         <ContainerSwiper>
           <SwiperTitle>Sempre com as melhores ferramentas</SwiperTitle>
-          <SwiperSubtitle>
-            Buscando as novidades do mercado, nossas soluções são construídas
-            com o que será o melhor para a sua necessidade.
-          </SwiperSubtitle>
+          <ContainerSubtitle>
+            <SwiperSubtitle>
+              Buscando as novidades do mercado, nossas soluções são construídas
+              com o que será o melhor para a sua necessidade.
+            </SwiperSubtitle>
+            <img alt="Arrow right" src={ArrowRight} />
+          </ContainerSubtitle>
+
           <CustomSwiper slidesPerView={4.5} spaceBetween={16}>
             {techList.map((item: any, index) => (
               <SwiperSlide key={index}>
@@ -157,7 +136,7 @@ export const Home: React.FC = () => {
             <SwiperSubtitle>
               Veja as nossas novidades no Instagram
             </SwiperSubtitle>
-            <p>@ohubdev</p>
+            <img alt="ohubdev" src={ohubdevGray} />
           </TextNews>
           <GridNews>
             {news.map((item) => (
@@ -194,7 +173,9 @@ export const Home: React.FC = () => {
               <a>Made by Studio Typpe®.</a>
             </FooterLastColumn>
           </FooterGrid>
-          <FooterText>{/* o<p>hub</p>dev */}</FooterText>
+          <FooterIcon>
+            <img alt="ohubfooter" src={ohubFooter} />
+          </FooterIcon>
         </Footer>
       </ContainerBody>
     </Container>

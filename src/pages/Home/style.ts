@@ -50,14 +50,25 @@ export const SwiperTitle = styled.h3`
   line-height: 53px;
   font-family: Raleway;
   font-weight: 600;
+  margin: 0 0 8px 0;
 `;
 
 export const SwiperSubtitle = styled.span`
-  margin-bottom: 44px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
   font-family: Raleway;
-  font-weight: 400;
+  font-weight: 300;
+  margin: 0 44px 0 0;
+`;
+
+export const ContainerSubtitle = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+
+  img {
+    cursor: pointer;
+  }
 `;
 
 export const CustomSwiper = styled(Swiper)`
@@ -99,7 +110,7 @@ export const ContainerAvatar = styled.div`
 export const ContainerPartnersGrid = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 56px;
+  margin-bottom: 225px;
 `;
 
 export const GridContainer = styled.div`
@@ -120,6 +131,11 @@ export const TextNews = styled.div`
   margin-bottom: 16px;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+
+  span {
+    margin-bottom: 0;
+  }
 `;
 
 export const GridNews = styled.div`
@@ -166,16 +182,16 @@ export const TalkButton = styled.button`
 export const Footer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   background-image: url(${Cloud});
   background-size: 100% 1511px;
   background-repeat: no-repeat;
   background-position: initial;
   max-height: 1511px;
   width: 100%;
-  flex-direction: column;
   padding-bottom: 100px;
   margin-top: 229px;
+  flex-direction: row;
 `;
 
 export const FooterGrid = styled.div`
@@ -183,6 +199,7 @@ export const FooterGrid = styled.div`
   grid-template-columns: 75px 202px 80px 221px;
   gap: 45px;
   margin-top: 668px;
+  margin-left: 300px;
 `;
 
 type FooterColumnProps = {
@@ -223,16 +240,8 @@ export const FooterLastColumn = styled.div`
   }
 `;
 
-export const FooterText = styled.div`
-  margin: 0;
-  padding: 0;
-  font-size: 32px;
-  line-height: 24px;
-  font-family: Raleway;
-  font-weight: 500;
-  color: "#313131";
-
-  p {
-    font-weight: 600;
-  }
+export const FooterIcon = styled.div`
+  display: flex;
+  margin-top: 668px;
+  margin-left: 72px;
 `;

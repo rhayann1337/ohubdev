@@ -10,6 +10,7 @@ export const ContainerButton = styled.div<ContainerButtonProps>`
   border-radius: 24px;
   background-color: ${({ color }) => (color ? color : "#ff5403")};
   padding: ${({ largeButton }) => (largeButton ? "8px 100px" : "8px 50px")};
+  cursor: pointer;
 
   p {
     margin: 0;

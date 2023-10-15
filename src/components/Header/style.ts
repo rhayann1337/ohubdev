@@ -19,6 +19,7 @@ export const ContainerButtons = styled.div`
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
+    cursor: pointer;
 
     :last-child {
       margin-right: 0;
