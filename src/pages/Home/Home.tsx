@@ -1,11 +1,16 @@
 import React from "react";
-import { Container, ContainerAvatar, ContainerBody } from "./style";
+import {
+  Container,
+  ContainerAvatar,
+  ContainerBody,
+  ContainerWhatsapp,
+} from "./style";
 
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import { AvatarCris, AvatarThiago } from "../../assets";
+import { AvatarCris, AvatarThiago, WhatsappIcon } from "../../assets";
 
 import {
   Header,
@@ -52,6 +57,9 @@ export const Home: React.FC = () => {
         <News />
         <Talk />
         <Footer />
+        <ContainerWhatsapp>
+          <img alt="ohubdev" src={WhatsappIcon} />
+        </ContainerWhatsapp>
       </ContainerBody>
     </Container>
   );

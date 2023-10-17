@@ -18,3 +18,16 @@ export const ContainerAvatar = styled.div`
   max-width: 1320px;
   margin-bottom: 56px;
 `;
+
+export const ContainerWhatsapp = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+
+  img {
+    cursor: pointer;
+  }
+`;

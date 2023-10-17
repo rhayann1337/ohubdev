@@ -24,3 +24,4 @@ export { default as ohubdevdesc } from "./ohubdev-desc.svg";
 export { default as microsoftLogo } from "./microsoft-logo.svg";
 export { default as VetorImage } from "./vetor_respiro.svg";
 export { default as Cloud } from "./cloud.svg";
+export { default as WhatsappIcon } from "./WhatsApp.svg";
