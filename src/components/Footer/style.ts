@@ -26,6 +26,7 @@ export const FooterGrid = styled.div`
 
 type FooterColumnProps = {
   color?: string;
+  isPointerEnabled?: boolean;
 };
 
 export const FooterColumn = styled.div<FooterColumnProps>`
@@ -42,6 +43,8 @@ export const FooterColumn = styled.div<FooterColumnProps>`
     font-family: Raleway;
     font-weight: 400;
     color: ${({ color }) => (color ? color : "#313131")};
+    cursor: ${({ isPointerEnabled }) =>
+      isPointerEnabled ? "pointer" : "initial"};
   }
 `;
 

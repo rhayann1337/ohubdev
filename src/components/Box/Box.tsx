@@ -12,7 +12,11 @@ export const Box: React.FC = () => {
           Somos um hub de desenvolvimento com o propósito de conectar ideias e
           pessoas.
         </SubTitle>
-        <Button color="#FF5403" text="Descubra mais!" />
+        <Button
+          color="#FF5403"
+          text="Descubra mais!"
+          onClick={() => window.open("https://whatsapp.com")}
+        />
       </ContainerInfo>
       <img src={CloudIcon} alt="Cloud Icon" />
     </ContainerBox>

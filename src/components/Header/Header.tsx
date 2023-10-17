@@ -23,9 +23,22 @@ export const Header: React.FC = () => {
         <p>Contato</p>
       </ContainerButtons>
       <ContainerSocial>
-        <img alt="Instagram" src={instagramIcon} />
-        <img alt="Facebook" src={facebookIcon} />
-        <img alt="Linkedin" src={linkedinIcon} />
+        <img
+          alt="Instagram"
+          src={instagramIcon}
+          onClick={() => window.open("https://instagram.com")}
+        />
+
+        <img
+          alt="Facebook"
+          src={facebookIcon}
+          onClick={() => window.open("https://facebook.com")}
+        />
+        <img
+          alt="Linkedin"
+          src={linkedinIcon}
+          onClick={() => window.open("https://linkedin.com")}
+        />
       </ContainerSocial>
     </ContainerHeader>
   );

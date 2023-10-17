@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
     <>
       <ContainerFooter>
         <FooterGrid>
-          <FooterColumn>
+          <FooterColumn isPointerEnabled={true}>
             <a>Início</a>
             <a>Soluções</a>
             <a>Parceiros</a>
@@ -23,10 +23,12 @@ export const Footer: React.FC = () => {
             <a>contato@ohubdev.com.br</a>
             <a>Santa Catarina — Brasil</a>
           </FooterColumn>
-          <FooterColumn>
-            <a>Instragram</a>
-            <a>Linkedin</a>
-            <a>Facebook</a>
+          <FooterColumn isPointerEnabled={true}>
+            <a onClick={() => window.open("https://instagram.com")}>
+              Instragram
+            </a>
+            <a onClick={() => window.open("https://linkedin.com")}>Linkedin</a>
+            <a onClick={() => window.open("https://facebook.com")}>Facebook</a>
           </FooterColumn>
           <FooterLastColumn>
             <a>Ohubdev® IT Services Ltda.</a>

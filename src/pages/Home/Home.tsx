@@ -58,7 +58,11 @@ export const Home: React.FC = () => {
         <Talk />
         <Footer />
         <ContainerWhatsapp>
-          <img alt="ohubdev" src={WhatsappIcon} />
+          <img
+            alt="ohubdev"
+            src={WhatsappIcon}
+            onClick={() => window.open("https://whatsapp.com")}
+          />
         </ContainerWhatsapp>
       </ContainerBody>
     </Container>
