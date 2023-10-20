@@ -13,7 +13,7 @@ export const ContainerLogo = styled.div``;
 export const ContainerButtons = styled.div`
   display: flex;
 
-  p {
+  a {
     margin-right: 64px;
     font-family: Raleway;
     font-size: 16px;

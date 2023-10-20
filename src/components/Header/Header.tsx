@@ -17,10 +17,10 @@ export const Header: React.FC = () => {
         <img alt="Logo" src={logo} />
       </ContainerLogo>
       <ContainerButtons>
-        <p>Soluções</p>
-        <p>Sobre</p>
-        <p>Clientes</p>
-        <p>Contato</p>
+        <a href="#Solution">Soluções</a>
+        <a href="#About">Sobre</a>
+        <a href="#Partners">Clientes</a>
+        <a href="#Contact">Contato</a>
       </ContainerButtons>
       <ContainerSocial>
         <img

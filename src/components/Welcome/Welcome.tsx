@@ -5,7 +5,7 @@ import { ohubdevdesc, lamp, microsoftLogo } from "../../assets";
 
 export const Welcome: React.FC = () => {
   return (
-    <ContainerMainContent>
+    <ContainerMainContent id="Welcome">
       <Content>
         <Description>
           <img alt="ohubdev" src={ohubdevdesc} />

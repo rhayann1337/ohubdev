@@ -13,7 +13,7 @@ import {
 export const DescriptionWithImage: React.FC = () => {
   return (
     <>
-      <ContainerDescription>
+      <ContainerDescription id="About">
         <DescriptionFirstText>
           Somos um <span>hub</span> de desenvolvimento! Focados em solucionar
         </DescriptionFirstText>

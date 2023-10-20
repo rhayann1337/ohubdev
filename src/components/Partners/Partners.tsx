@@ -9,7 +9,7 @@ import { ContainerPartnersGrid, GridContainer } from "./style";
 
 export const Partners: React.FC = () => {
   return (
-    <ContainerPartnersGrid>
+    <ContainerPartnersGrid id="Partners">
       <SwiperTitle>Clientes & Parceiros Ohub </SwiperTitle>
       <SwiperSubtitle>
         Clientes que caminham conosco e diversas emSwiperSubtitleresas que fazem

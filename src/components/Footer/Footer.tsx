@@ -11,7 +11,7 @@ import {
 export const Footer: React.FC = () => {
   return (
     <>
-      <ContainerFooter>
+      <ContainerFooter id="Contact">
         <FooterGrid>
           <FooterColumn isPointerEnabled={true}>
             <a>Início</a>
