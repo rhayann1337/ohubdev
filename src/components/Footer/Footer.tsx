@@ -14,9 +14,9 @@ export const Footer: React.FC = () => {
       <ContainerFooter id="Contact">
         <FooterGrid>
           <FooterColumn isPointerEnabled={true}>
-            <a>Início</a>
-            <a>Soluções</a>
-            <a>Parceiros</a>
+            <a href="#Welcome">Início</a>
+            <a href="#Solution">Soluções</a>
+            <a href="#Partners">Parceiros</a>
           </FooterColumn>
           <FooterColumn color="#FF5403">
             <a>(47) 99791-7737</a>
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           </FooterColumn>
           <FooterColumn isPointerEnabled={true}>
             <a onClick={() => window.open("https://instagram.com")}>
-              Instragram
+              Instagram
             </a>
             <a onClick={() => window.open("https://linkedin.com")}>Linkedin</a>
             <a onClick={() => window.open("https://facebook.com")}>Facebook</a>

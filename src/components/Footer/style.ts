@@ -35,6 +35,7 @@ export const FooterColumn = styled.div<FooterColumnProps>`
   width: fit-content;
 
   a {
+    text-decoration: none;
     width: fit-content;
     margin: 0;
     padding: 0;
